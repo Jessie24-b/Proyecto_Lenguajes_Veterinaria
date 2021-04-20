@@ -1,12 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
     <servlet>
-        <servlet-name>ServletPrueba</servlet-name>
-        <servlet-class>cr.ac.ucr.proyecto_veterinaria.servlets.ServletPrueba</servlet-class>
+        <servlet-name>RegisterPetServlet</servlet-name>
+        <servlet-class>cr.ac.ucr.happy_pet.servlets.RegisterPetServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>GetRegistersServlet</servlet-name>
+        <servlet-class>cr.ac.ucr.happy_pet.servlets.GetRegistersServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>GetAnimalServlet</servlet-name>
+        <servlet-class>cr.ac.ucr.happy_pet.servlets.GetAnimalServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ObtainPetServlet</servlet-name>
+        <servlet-class>cr.ac.ucr.happy_pet.servlets.ObtainPetServlet</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>ServletPrueba</servlet-name>
-        <url-pattern>/ServletPrueba</url-pattern>
+        <servlet-name>RegisterPetServlet</servlet-name>
+        <url-pattern>/registrarmascota</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>GetRegistersServlet</servlet-name>
+        <url-pattern>/obtenerregistros</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>GetAnimalServlet</servlet-name>
+        <url-pattern>/obteneranimal</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ObtainPetServlet</servlet-name>
+        <url-pattern>/obtenermascota</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

@@ -1,12 +1,14 @@
 package cr.ac.ucr.proyecto_veterinaria.domain;
+
 import java.sql.Blob;
 
 /*  @author Luis Leiton
-*/
+ */
 public class User {
 
     private int id;
     private String name;
+    private String lastName;
     private String surname;
     private String mail;
     private String phone;
@@ -14,15 +16,28 @@ public class User {
     private Blob picture;
     private String password;
 
-    public User(int id, String name, String surname, String password,String mail, String phone, String address, Blob picture) {
+    public User(int id, String name, String lastName, String surname, String password, String mail, String phone, String address, Blob picture) {
         this.id = id;
         this.name = name;
+        this.lastName = lastName;
         this.surname = surname;
         this.password = password;
         this.mail = mail;
         this.phone = phone;
         this.address = address;
         this.picture = picture;
+    }
+    
+      public User(int id, String name, String lastName, String surname, String password, String mail, 
+              String phone, String address) {
+        this.id = id;
+        this.name = name;
+        this.lastName = lastName;
+        this.surname = surname;
+        this.password = password;
+        this.mail = mail;
+        this.phone = phone;
+        this.address = address;
     }
 
     public int getId() {
@@ -39,6 +54,14 @@ public class User {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
     }
 
     public String getSurname() {
@@ -88,5 +111,12 @@ public class User {
     public void setPassword(String password) {
         this.password = password;
     }
+
+    @Override
+    public String toString() {
+        return "User{" + "id=" + id + ", name=" + name + ", lastName=" + lastName + ", surname=" + surname + ", mail=" + mail + ", phone=" + phone + ", address=" + address + ", picture=" + picture + ", password=" + password + '}';
+    }
     
+    
+
 }

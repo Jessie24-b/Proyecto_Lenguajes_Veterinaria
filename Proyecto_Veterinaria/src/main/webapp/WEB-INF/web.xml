@@ -16,6 +16,26 @@
         <servlet-name>ObtainPetServlet</servlet-name>
         <servlet-class>cr.ac.ucr.happy_pet.servlets.ObtainPetServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>DeleteEmployeeServlet</servlet-name>
+        <servlet-class>cr.ac.ucr.proyecto_veterinaria.servlets.employee.DeleteEmployeeServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>EditEmployeeServlet</servlet-name>
+        <servlet-class>cr.ac.ucr.proyecto_veterinaria.servlets.employee.EditEmployeeServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SearchEmployeeServlet</servlet-name>
+        <servlet-class>cr.ac.ucr.proyecto_veterinaria.servlets.employee.SearchEmployeeServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AddEmployeeServlet</servlet-name>
+        <servlet-class>cr.ac.ucr.proyecto_veterinaria.servlets.employee.AddEmployeeServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ShowListEmployeeServlet</servlet-name>
+        <servlet-class>cr.ac.ucr.proyecto_veterinaria.servlets.employee.ShowListEmployeeServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>RegisterPetServlet</servlet-name>
         <url-pattern>/registrarmascota</url-pattern>
@@ -31,6 +51,26 @@
     <servlet-mapping>
         <servlet-name>ObtainPetServlet</servlet-name>
         <url-pattern>/obtenermascota</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DeleteEmployeeServlet</servlet-name>
+        <url-pattern>/deleteemployee</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>EditEmployeeServlet</servlet-name>
+        <url-pattern>/editemployee</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SearchEmployeeServlet</servlet-name>
+        <url-pattern>/searchemployee</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AddEmployeeServlet</servlet-name>
+        <url-pattern>/addemployee</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ShowListEmployeeServlet</servlet-name>
+        <url-pattern>/showlistemployee</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
